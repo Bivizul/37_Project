@@ -3,7 +3,7 @@ package aaa.bivizul.a37project.domain.util
 object Howdoecon {
 
     const val HOWDOEAN = "37 Project"
-    const val HOWDOEKOR = "apostkor"
+    const val HOWDOEKOR = "howdoekor"
     const val HOWDOEDOR = "https://www.google.com/"
     const val HOWDOEACTIVITY = "aaa.bivizul.a37project.android.HowdoeActivity"
     const val HOWDOEBV = "http://65.109.10.118/37Project/7cv.jpg"

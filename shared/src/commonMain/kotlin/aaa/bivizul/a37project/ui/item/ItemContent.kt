@@ -8,8 +8,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -28,14 +26,12 @@ fun ItemContent(
 
     val howdoeItemList by component.state.collectAsState()
     val model by component.models.subscribeAsState()
-    val scrollState = rememberScrollState()
 
     if (howdoeItemList != null) {
         howdoeItemList?.let { list ->
             list[model.selectedHowdoeItemId - 1].let { item ->
                 LazyColumn(
                     modifier = modifier
-//                        .verticalScroll(scrollState)
                         .padding(8.dp)
                         .fillMaxSize(),
                     horizontalAlignment = Alignment.Start,
